@@ -223,7 +223,6 @@ function getRandomFlavors(array1, array2, array3, array4){
         randomArray.push(bigArray[flavor]);                         // add that flavor to the new random flavor array
         for (let j=0; j<randomArray.length-1; j++){                 // create a for loop on items in the new random flavor array
             if (bigArray[flavor]===randomArray[j]){                 // check if the current flavor being added is in the current index of new array
-              console.log("dupe");
               randomArray.pop();                                    // if it's a dupe, pop it off the new array
               i--;                                                  // bump the index for the 31 flavors loop
               break;                                                // end the loop because there should never be more than one duplicate
